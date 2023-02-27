@@ -750,7 +750,7 @@ img.emoji {
   background: #F2C3B7;
 }
 .block.orange {
-  background: #f26522;
+  background: #fcefe7;
   color:#fff;
 }
 .block.yellow {
@@ -799,7 +799,7 @@ img.emoji {
   height: 0px;
   border-style: solid;
   border-width: 0 0 15px 15px;
-  border-color: transparent transparent #f26522 transparent;
+  border-color: transparent transparent #fcefe7 transparent;
 }
 
 .block.blue.arrow:before {
