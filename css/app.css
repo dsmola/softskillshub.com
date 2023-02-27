@@ -748,8 +748,11 @@ img.emoji {
 
 .block.pink {
   background: #F2C3B7;
+  color:#fff;
 }
-
+.block.orange {
+  background: #f26522;
+}
 .block.yellow {
   background: #fffc89;
 }
@@ -789,6 +792,14 @@ img.emoji {
 
 .block.blue .link {
   color: #fff;
+}
+
+.block.orange.arrow:before {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 15px 15px;
+  border-color: transparent transparent #f26522 transparent;
 }
 
 .block.blue.arrow:before {
