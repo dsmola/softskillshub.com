@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Soft Skills Hub — a place where soft skills are trained</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Soft Skills Hub">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Open Graph data-->
+    <meta property="og:title" content="Soft Skills Hub">
+    <meta property="og:type" content="Soft Skills Hub">
+    <meta property="og:url" content="https://softskillshub.com">
+    <meta property="og:image" content="https://softskillshub.com">
+    <meta property="og:description" content="Soft Skills Hub">
+    <meta property="og:site_name" content="Soft Skills Hub">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" media="all" href="css/letter-spacing.css">
+    <link rel="stylesheet" media="all" href="css/form.css">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+          (m[i].a = m[i].a || []).push(arguments)
+        };
+        var z = null;
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(90290323, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      });
+    </script>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/90290323" style="position:absolute; left:-9999px;" alt="" />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '644024500370703');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=644024500370703&ev=PageView
+		&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- MailerLite Universal -->
+    <script>
+      (function(w, d, e, u, f, l, n) {
+        w[f] = w[f] || function() {
+            (w[f].q = w[f].q || []).push(arguments);
+          }, l = d.createElement(e), l.async = 1, l.src = u,
+          n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+      })
+      (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+      ml('account', '491575');
+    </script>
+    <!-- End MailerLite Universal -->
+    <style>
+      body {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 1.2rem;
+      }
+
+      .highlight{
+        color: #ffe346;
+      }
+      p.subtitle {
+        font-family: 'Lexend', sans-serif;
+        font-weight: 700;
+      }
+
+      .list.mb-10 li {
+        margin-bottom: 10px;
+      }
+
+      h1,
+      .title {
+        font-family: 'Lexend', sans-serif;
+        font-weight: 800;
+      }
+
+      .mns,
+      .join_the_club {
+        font-family: 'Lexend', sans-serif;
+        font-weight: 800;
+      }
+
+      hr {
+        opacity: 0.2;
+      }
+
+      .ib {
+        display: inline-block;
+      }
+
+      .review-text {
+        font-size: 1.2rem;
+      }
+
+      .program-item {
+        background: rgb(242 101 34 / 10%);
+        padding: 30px 40px;
+        border-radius: 10px;
+        font-size: 1rem;
+      }
+
+      .list-item {
+        font-size: 1.1rem;
+      }
+
+      .min-height-auto {
+        min-height: auto;
+      }
+
+      .owl-carousel button.owl-prev, .owl-carousel button.owl-next{
+    background: #373737;
+}
+
+    .owl-carousel button.owl-prev:hover, .owl-carousel button.owl-next:hover {
+        background: #232323;
+    }
+
+    .about-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    </style>
+  </head>
+  <body class="self-esteem">
+    <div class="out">
+      <!-- header-->
+      <header class="header">
+        <div class="header__left">
+          <a class="header__logo" href="#">
+            <img class="header__pic" src="img/logo-white.png">
+          </a>
+          <div class="header__text">
+            <span class="bold">Soft Skills Hub</span>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- wrapper-->
+      <div class="wrapper">
+        <div id="startButton" class="start-button-holder hide">
+          <button class="button-wave">Claim Your Free Lessons & Bonus Now!</button>
+        </div>
+        <!-- center -->
+        <div class="center">
+          <!-- hero -->
+          <div class="hero">
+            <h1 class="mb-10">Build your Confidence & Self-Esteem</h1>
+            <p class="subtitle">And land the dream job you deserve</p>
+            <ul class="hero-ul">
+              <li>— Just 25 minutes a day</li>
+              <li>— See the difference in 2 weeks</li>
+              <li>— Personal support via 1-to-1 sessions & AI coaching</li>
+            </ul>
+            <hr />
+            <div class="leadmagnet">
+              <div class="leadmagnet-text-holder">
+                <div class="leadmagnet-title">Instantly Access 10+ Confidence-Boosting Tactics</div>
+                <div class="leadmagnet-text">Handpicked to rapidly improve your outlook.</div>
+              </div>
+              <div class="leadmagnet-image">
+                <img src="img/gift.png" alt="Lead Magnet">
+              </div>
+            </div>
+            <div class="start-button-holder intro">
+              <button class="button-wave">Claim Your Free Lessons & Bonus Now!</button>
+              <div class="no-charge align-center">No credit card. Just insightful lessons.</div>
+            </div>
+          </div>
+          <!-- end hero -->
+
+          <!-- block 1-->
+          <div class="block inline arrow profile" id="hi">
+            <div class="ava">
+              <img class="img" src="img/smola.png" alt="Smola" />
+            </div>
+            <div class="container sm">
+              <div class="text">
+                <b class="mns mb-10 ib">👋 Hi!</b>
+                <p>This course is distilled from 15 years of real-life experience, which include <span class="underline">overcoming shyness</span>, conquering <span class="underline">anxiety</span>, grappling with <span class="underline">losses</span> and health issues, climbing the business ladder and <span class="underline">falling</span> from it. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block inline">
+            <div class="container sm">
+              <div class="text">
+                <p>You'll learn practical exercises, scientifically proved methods, and see real <b>unfiltered flaws</b> — the very thing I wished were revealed when I was learning from others.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end block 1 -->
+
+          <!-- block 2 -->
+          <div class="block inline">
+            <div class="container sm">
+              <div class="text">
+                <b class="mns mb-10 ib">🌚 Who's this for:</b>
+                <p>Designed for job seekers and anyone looking to make a fresh start in a new role. <b>But, it's more than just career assistance.</b> </p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div class="block inline">
+            <div class="container sm">
+              <div class="text">
+                <p>These lessons navigate the maze of improving <b>self-confidence</b> — your <b>superpower</b> for: </p>
+                  <ul>
+                    <li>— effective communication</li>
+                    <li>— sales</li>
+                    <li>— entrepreneurship</li>
+                    <li>— nurturing relationships</li>
+                  </ul> 
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- end block 2 -->
+
+          <!-- block 3 -->
+          <div class="block">
+            <div class="container lg">
+              <div class="mb-35">
+                <div class="title mb-20 lg">What to expect</div>
+              </div>
+              <div class="row padding mb-35">
+                <div class="col">
+                  <div class="text sm bold mb-5">📈 Roots</div>
+                  <div class="text sm mb-5"> Discover what's holding you back and liberate yourself.</div>
+                </div>
+                <div class="col">
+                  <div class="text sm bold mb-5">📈 Shyness</div>
+                  <div class="text sm mb-5"> Go beyond your inner limits and conquer social anxiety.</div>
+                </div>
+              </div>
+              <div class="row padding mb-35">
+                <div class="col">
+                  <div class="text sm bold mb-5">📈 Self-Worth</div>
+                  <div class="text sm mb-5"> Uncover your potential - crush your imposter syndrome.</div>
+                </div>
+                <div class="col">
+                  <div class="text sm bold mb-5">📈 Empathy</div>
+                  <div class="text sm mb-5"> Enhance your communication - listen and be heard.</div>
+                </div>
+              </div>
+              <div class="row padding mb-35">
+                <div class="col">
+                  <div class="text sm bold mb-5">📈 Self-Promotion </div>
+                  <div class="text sm mb-5"> Learn how to be your own advocate and sell yourself. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end block 3 -->
+
+          <!-- block 9 -->
+          <div class="dark-block">
+            <div class="container">
+              <div class="mb-20">
+                <div class="title sm">A 25-Minute Daily Investment for Long-term Confidence</div>
+                <div class="text">
+                  <p>Every lesson includes <b class="highlight">theory</b>, <b class="highlight">practice</b> and a <b class="highlight">real-life story</b>. You can practice alone, but you can also join the the 1-to-1's community and get access to the AI coach for a small fee.</p>
+                </div>
+              </div>
+              <div class="box wide">
+                <div class="slider owl-carousel items-2 js-self-esteem-slider-cols-2">
+                  <div class="slider-item">
+                    <figure class="figure">
+                      <img class="img" src="img/se-slider-slide-1.png">
+                    </figure>
+                  </div>
+                  <div class="slider-item">
+                    <figure class="figure">
+                      <img class="img" src="img/se-slider-slide-2.png">
+                    </figure>
+                  </div>
+                  <div class="slider-item">
+                    <figure class="figure">
+                      <img class="img" src="img/se-slider-slide-3.png">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end block 9 -->
+          <!-- block 3 -->
+          <div class="block">
+            <div class="container">
+              <div class="title mb-20">Feedback</div>
+              <div class="box wide align-center">
+                <div class="slider owl-carousel items-1 js-slider">
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">«The day about traumas hit me hard. The personal story resonated with my past and the reflection exercises were profound. It's been truly transformational.»</div>
+                      <div class="review-author">
+                        <div class="text sm">
+                          <span class="bold">Rate:</span> 9.0 / 10
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">«How much could I really learn about self-esteem in two weeks? I'm here to say, more than I ever thought possible. I've become more self-aware, I've gained a newfound understanding of my worth, and my confidence has skyrocketed. It's transformed my entire outlook on life.»</div>
+                      <div class="review-author">
+                        <div class="text sm">
+                          <span class="bold">Rate:</span> 10 / 10
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">The third lesson opened my eyes to how deeply I was stuck in the comparison trap. The Dima's personal story and the self-reflection exercises really hit home.</div>
+                      <div class="review-author">
+                        <div class="text sm">
+                          <span class="bold">Rate:</span> 8 / 10
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">The insights on 'Understanding Other's Perspectives' improved not just my self-esteem but also my relationships. Dima's anecdotes made it even more powerful. The only area for improvement I see is the incorporation of more visual aids or infographics for complex topics.</div>
+                      <div class="review-author">
+                        <div class="text sm">
+                          <span class="bold">Rate:</span> 7 / 10
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">«It was helpful to say things out loud to the person you were talking to, to listen to the reasoning and: either realize that you are not alone in having these feelings, or to look at things from a different angle»</div>
+                      <div class="review-author">
+                        <div class="text sm">
+                          <span class="bold">Rate:</span> 10 / 10
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">«I was astounded by the empathy of the people and their genuine passion. I even wrote out the questions from some 1-to-1 sessions again after the session.»</div>
+                      <div class="review-author">
+                        <div class="text sm"><span class="bold">Rate:</span> 8 / 10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">«The most useful thing about the course was two things. First — Coaching with a stranger where you can openly express your fears and thoughts about the person and their experience. Second — A trusting environment.»</div>
+                      <div class="review-author">
+                        <div class="text sm"><span class="bold">Rate:</span> 8 / 10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">«Reading is a passive activity. Talking through the same thing with a human being produces completely different results.  »</div>
+                      <div class="review-author">
+                        <div class="text sm"><span class="bold">Rate:</span> 7 / 10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="review">
+                      <div class="review-text">«Questions and people! The questions gave direction and the people helped us understand its purpose.»</div>
+                      <div class="review-author">
+                        <div class="text sm"><span class="bold">Rate:</span> 10 / 10</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- block 9 -->
+          <div class="dark-block">
+            <div class="container">
+              <div class="mb-40">
+                <div class="title">Your Journey Towards Self-Discovery And Growth</div>
+                <div class="text">
+                  <b>Week #1: Introspection</b>
+                  <p>— Understand your behavior, confront fears, and break self-imposed limits.</p>
+                  <b>Week #2: Empowerment</b>
+                  <p>— Develop strategies and tools to overcome barriers and boost confidence.</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="lessonCard">
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-unlock.svg" alt="Unlock Icon">
+                        </span> Bonus </span>
+                      <span class="lesson-card-title"> Bonus: Instant Access to Confidence-Boosting Techniques</span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-unlock.svg" alt="Unlock Icon">
+                        </span> Day #1 </span>
+                      <span class="lesson-card-title"> Understanding Self-Confidence and Self-Esteem </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-unlock.svg" alt="Unlock Icon">
+                        </span> Day #2 </span>
+                      <span class="lesson-card-title"> The Neuroscience Behind Confidence </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-unlock.svg" alt="Unlock Icon">
+                        </span> Day #3 </span>
+                      <span class="lesson-card-title"> Are You in the Comparison Trap? </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-unlock.svg" alt="Unlock Icon">
+                        </span> Day #4 </span>
+                      <span class="lesson-card-title"> Fear of Rejection, Failure, and Criticism </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #5 </span>
+                      <span class="lesson-card-title"> Delving into Imposter Syndrome </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #6 </span>
+                      <span class="lesson-card-title"> Unpacking the Impact of Past Traumas </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #7 </span>
+                      <span class="lesson-card-title"> The Role Of Self-Acceptance And Self-Compassion </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #8 </span>
+                      <span class="lesson-card-title"> The Power Of Small Steps To Build Confidence </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #9 </span>
+                      <span class="lesson-card-title"> The Intersection Of Nutrition, Exercise, And Confidence </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #10 </span>
+                      <span class="lesson-card-title"> Overcoming Overthinking And Negative Self-Talk</span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #11 </span>
+                      <span class="lesson-card-title"> Embracing Failure, Celebrating Success, Overcoming Fear Of Rejection </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #12 </span>
+                      <span class="lesson-card-title"> Embracing Vulnerability and Cultivating Positive Self-Image </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #13 </span>
+                      <span class="lesson-card-title"> Others' Perspectives And The Power Of Generosity </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                  <a class="lesson-card" href="#">
+                    <div class="left-column">
+                      <span class="lesson-card-header">
+                        <span class="icon">
+                          <img src="img/lesson-lock.svg" alt="Unlock Icon">
+                        </span> Day #14 </span>
+                      <span class="lesson-card-title"> Highlighting Achievements And Mastering Self-Promotion </span>
+                    </div>
+                    <!-- <img class="thumb" src="" alt=""> -->
+                  </a>
+                </div>
+              </div>
+              <div class="box wide"></div>
+            </div>
+          </div>
+          <!-- end block 9 -->
+          <!-- block 4 -->
+          <div class="block">
+            <div class="container lg">
+              <div class="about-author">
+                <div class="about-author-title">
+                  <div class="title" style="margin-bottom: 5px;">Dima Smola</div>
+                  <div class="text" style="font-family: 'Lexend', Arial, Helvetica, sans-serif">Big Tech Product Manager, Entrepreneur</div>
+                </div>
+                <div class="about-author-image">
+                  <img class="profile-img" src="img/smola_small.jpg" style="max-width:120px">
+                </div>
+              </div>
+              <hr/>
+                <div class="text mb-20">Starting as a self-taught web developer and now a product manager in the tech industry, I've firsthand experienced the critical role of self-confidence in professional growth. But most of my growth wasn't in the tech industry, but in the personal one.</div>
+
+                  <a class="link" href="https://www.threads.net/@smolaskills" target="_blank">Threads</a>
+                  <a class="link" href="https://www.linkedin.com/in/dmitry-smola/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          <!-- end block 4 -->
+          <!-- block 27-->
+          <div class="block">
+            <div class="container lg">
+              <div class="title">FAQ</div>
+              <div class="text mb-20">
+                <b>How much time do I need to spend on the course?</b>
+                <p>25 minutes per day. You can do it in the morning, during lunch or in the evening. It's up to you.</p>
+              </div>
+              <div class="text mb-20">
+                <b>Is This A Self Paced Course, Community, Or Cohort?</b>
+                <p>In the base version, it's a self-paced course. You will receive one lesson per day into your mailbox for 14 days after you sign up. However, there's the opportunity to join our dynamic community and get access to an AI coach for personalized guidance and support. </p>
+              </div>
+              <div class="text mb-20">
+                <b>How long is the course? </b>
+                <br> You will receive one lesson per day into your mailbox for 14 days after you sign up.
+              </div>
+              <div class="text mb-20">
+                <b>What if the course isn't what I expected?</b>
+                <br>Even if you buy it after a fully free trial (4 Lessons), you can cancel it and get a full refund. No questions asked. I want you to be happy with the course.
+              </div>
+              <div class="text mb-20">
+                <b>What if I have questions? </b>
+                <br> You can ask them per email and receive an answer within 24 hours.
+              </div>
+              <div class="text mb-20">
+                <b>What if I want to talk to you personally? </b>
+                <br>You can book a call with me. I will be happy to talk to you.
+              </div>             
+            </div>
+          </div>
+          <!-- end block 27 -->
+        </div>
+        <!-- end center -->
+      </div>
+      <!-- end wrapper -->
+      <!-- footer-->
+      <footer class="footer fixed js-footer">
+        <div class="footer__left">
+          <div class="footer__menu">
+            <a class="footer__link" href="privacy.html" target="_blank">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__copyright copyright">
+            <p>© Soft Skills Hub 2023</p>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- modal-->
+    <div id="subscribeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">
+          <img src="img/popup-close.svg" alt="Close">
+        </span>
+        <!-- <span class="modal-title">Start Today!</span>
+        <div class="modal-text">Enter your email to get the first lesson and bonus right away. Your next lesson comes tomorrow. </div> -->
+        <div class="ml-embedded" data-form="NI4ynw"></div>
+      </div>
+    </div>
+    <!-- end modal -->
+    <!-- end out -->
+    <!-- load scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+    <script>
+      $(function() {
+        $('.smoothscroll').smoothscroll({
+          duration: 400,
+          easing: 'swing',
+          offset: 30,
+          hash: true,
+          focus: true,
+        });
+      });
+    </script>
+    <script>
+      window.onscroll = function() {
+        showScrollButton();
+      };
+
+      function showScrollButton() {
+        var startButton = document.getElementById("startButton");
+        if (document.body.scrollTop > 0.5 * window.innerHeight || document.documentElement.scrollTop > 0.5 * window.innerHeight) {
+          startButton.classList.remove("hide");
+          startButton.classList.add("show");
+        } else {
+          startButton.classList.add("hide");
+          startButton.classList.remove("show");
+        }
+      }
+      var modal = document.getElementById("subscribeModal");
+      var btns = document.getElementsByClassName("start-button-holder");
+      var span = document.getElementsByClassName("close")[0];
+
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function() {
+          modal.style.display = "flex";
+          fbq('track', 'Lead');
+        };
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -3062,6 +3062,34 @@ var navArrows = ["\n    <i class=\"material-icons\">arrow_back</>", "<i class=\"
     }
 })();
 
+// Special slider for self-esteem page
+(function () {
+    var owl = $('.js-self-esteem-slider-cols-2');
+    if (owl.length) {
+        owl.each(function () {
+            var _this = $(this);
+            _this.owlCarousel({
+                items: 2,
+                nav: false,
+                loop: false,
+                navElement: 'button', 
+                stagePadding: 20,
+                navText: navArrows,
+                responsive: {
+                    0: {
+                        items: 1,
+                        stagePadding: 15
+                    },
+                    768: {
+                        items: 2,
+                        stagePadding: 20
+                    }
+                }
+            });
+        });
+    }
+})();
+
 // animate
 (function () {
     var anim = $('[data-animate]');
