@@ -13,6 +13,43 @@ output, ruby, section, summary, time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* Book Holder Start */
+
+.book-holder {
+  position: absolute;
+  max-width: 200px;
+  right: -150px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.book-holder img{
+  max-width:100%;
+  position: relative;
+  max-width: 150px;
+  margin-bottom:0.5rem;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.book-holder:hover img{
+  opacity: 1;
+}
+
+.book-author,.book-title{
+  color: #8c8c8c;
+  font-size:1rem;
+  /* text-align: center; */
+}
+.book-rating{
+  /* float:right; */
+  /* margin: 0.5rem auto; */
+}
+
+/* Book Holder End*/
+
+
 ul.progul{
 list-style-type:disc;
 margin:10px 20px;
@@ -22,7 +59,7 @@ font-size:16px
     background: #e7eae9;
 	border-left: 4px solid #ff9700;
 }
-p.subtitle{color:#fff; margin-bottom:2em; font-size:1.2em}
+p.subtitle{color: #fff;margin-bottom: 2.4rem;font-size: 1.4rem;line-height: 2rem;}
 
 span.underline{text-decoration:underline}
 .open_popup:hover{
@@ -57,6 +94,7 @@ margin-bottom:5px
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 #loadingcat {
     background: white;
@@ -79,6 +117,7 @@ input[type="email"],
 input[type="tel"],
 textarea {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 input[type="submit"],
@@ -167,6 +206,45 @@ html {
   fill: initial;
 }
 
+/**Rater**/
+
+.star-rating {
+  width: 0;
+  position: relative;
+  display:inline-block;
+  background-image: url('../img/star_0.svg');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  cursor: pointer;
+}
+
+.star-rating .star-value {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('../img/star_1.svg') 0 0 repeat-x;
+  background-repeat: repeat-x;
+}
+
+.star-rating.disabled {
+  cursor: default;
+}
+
+.star-rating.is-busy {
+  cursor: wait;
+}
+
+.star-rating .star-value.rtl {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  right: 0;
+  left: auto;
+}
+
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch
@@ -187,6 +265,9 @@ html {
   position: relative;
   -ms-touch-action: pan-Y;
   -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  touch-action: pan-y;
 }
 
 .owl-carousel .owl-stage:after {
@@ -202,6 +283,7 @@ html {
   position: relative;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .owl-carousel .owl-item, .owl-carousel .owl-wrapper {
@@ -211,6 +293,8 @@ html {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .owl-carousel .owl-item {
@@ -218,6 +302,7 @@ html {
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-touch-callout: none;
+  backface-visibility: hidden;
 }
 
 .owl-carousel .owl-item img {
@@ -334,6 +419,7 @@ html {
   z-index: 1;
   -webkit-backface-visibility: hidden;
   transition: transform .1s ease;
+  backface-visibility: hidden;
 }
 
 .owl-carousel .owl-video-play-icon:hover {
@@ -420,6 +506,7 @@ html {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-mask-image: -webkit-radial-gradient(circle, #ffffff 100%, #000000 100%);
+  mask-image: radial-gradient(circle, #ffffff 100%, #000000 100%);
 }
 
 /*.waves-button,
@@ -523,7 +610,7 @@ button {
 	background-color: #111;
     background-size: 33px;
     background-image: url(../img/bg1.png);
-=}
+}
 
 [data-animate] {
   opacity: 0;
@@ -549,7 +636,7 @@ button {
 
 .animated {
   animation-duration: .4s;
-  animation-color-mode: both;
+  /* animation-color-mode: both; */
 }
 
 .animated.done {
@@ -1038,12 +1125,13 @@ img.emoji {
 
 p.subtitle {
   font-family: 'Lexend', sans-serif;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 h1, .title {
   font-family: 'Lexend', sans-serif;
   font-weight: 800;
+  font-size: 2rem;
 }
 
 .header.visible .header__wrap {
@@ -3095,7 +3183,7 @@ p.search-p {
 
 .start-button-holder .button-wave {
   appearance: none;
-  background-color: rgb(102,116,204);
+  background-color: #6674cc;
   border: none;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
@@ -3311,9 +3399,9 @@ span.lesson-card-header {
 }
 
 .self-esteem ul.hero-ul li {
-  color: #fafafa;
+  color: #dddddd;
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   font-family: 'Lexend';
 }
 
