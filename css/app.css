@@ -3401,8 +3401,9 @@ span.lesson-card-header {
 .self-esteem ul.hero-ul li {
   color: #dddddd;
   font-size: 1.2rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   font-family: 'Lexend';
+  line-height: 1.8rem;
 }
 
 .self-esteem .hero{
