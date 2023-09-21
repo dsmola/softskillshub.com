@@ -3266,7 +3266,21 @@ text-decoration: none;
 cursor: pointer;
 }
 
-.lesson-card{background-color: rgb(32,35,42);border: 1px solid rgb(185 185 185);border-radius: 15px;color: rgb(255,255,255);display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;margin: 0 -20px;min-height: 40px;padding: 0 14px 0 19px;text-decoration: none;margin-bottom: 0.6rem;}
+.lesson-card{
+  background-color: rgb(31 31 31);
+  border: 1px solid rgb(49 49 49);
+  border-radius: 15px;
+  color: rgb(255,255,255);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+  min-height: 40px;
+  padding: 0 14px 0 19px;
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+}
 
 .lesson-card .left-column{
 -webkit-box-orient: vertical;
@@ -3398,12 +3412,22 @@ span.lesson-card-header {
   color: #fff;
 }
 
+.self-esteem ul.hero-ul{
+  background: rgb(32,35,42);
+    border-radius: 15px;
+    padding: 20px;
+}
+
 .self-esteem ul.hero-ul li {
-  color: #dddddd;
+  color: #fbfbfb;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   font-family: 'Lexend';
   line-height: 1.8rem;
+}
+
+.self-esteem ul.hero-ul li:last-child {
+  margin-bottom: 0px;
 }
 
 .self-esteem .hero{
