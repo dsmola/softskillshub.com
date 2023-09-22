@@ -154,6 +154,12 @@
         justify-content: space-between;
         align-items: center;
       }
+      .white-text {
+        color: #fff;
+      }
+      .highlight-text {
+        color: #ffe346;
+      }
     </style>
   </head>
   <body class="self-esteem">
@@ -172,7 +178,7 @@
       <!-- end header -->
       <!-- wrapper-->
       <div class="wrapper">
-        <div id="startButton" class="start-button-holder hide">
+        <div id="startButton" class="start-button-holder">
           <a href="https://ig.me/m/ohmysoftskills" target="_blank">
             <button class="button-wave">Apply in 1 min</button>
           </a>
@@ -181,24 +187,24 @@
         <div class="center">
           <!-- hero -->
           <div class="hero">
-            <h1 class="mb-10">Boost Your Career & Life in 6&nbsp;weeks</h1>
-            <p class="subtitle">Just by talking with people about things that matter to you</b></p>
+            <h1 class="mb-10">Boost Your Communication, Career & Life in 6&nbsp;weeks</h1>
+            <p class="subtitle" style="color:#bbb">By talking with <span class="white-text">like-minded people</span> about things that <span class="white-text">matter to you</span></b></p>
             <ul class="hero-ul">
-              <li>— Shape communication talking with real people.</li>
-              <li>— Build confidence by reflecting on topics you discuss. </li>
-              <li>— Enjoy safe and honest space perfect for introverts.</li>
+              <li><span class="highlight-text">⭐ Improve communication</span> with genuine interactions.</li>
+              <li><span class="highlight-text">⭐ Build confidence</span> by reflecting on topics you discuss. </li>
+              <li>⭐ Enjoy <span class="highlight-text">safe and honest space</span> perfect for introverts.</li>
             </ul>
             <hr />
             <div class="leadmagnet">
               <div class="leadmagnet-text-holder">
-                <div class="leadmagnet-title">Feel results from session one.</div>
-                <div class="leadmagnet-text">Take a quick survey, pay just $5 to get matched for next week.</div>
+                <div class="leadmagnet-title"><span class="highlight-text">Just $5</span> to enroll!</div>
+                <div class="leadmagnet-text">Take a quick survey, and get matched for next week.</div>
               </div>
               <div class="leadmagnet-image">
                 <img src="img/gift.png" alt="Lead Magnet">
               </div>
             </div>
-            <div class="start-button-holder intro">
+            <div class="start-button-holder intro" id="hero-button">
               <a href="https://ig.me/m/ohmysoftskills" target="_blank">
                 <button class="button-wave">I'm in!</button>
               </a>
@@ -219,12 +225,12 @@
               <div class="mb-20">
                 <div class="title sm">How it works</div>
                 <div class="text">
-                  <p>Once a week you meet with a new person and discuss questions we prepare for you. </p>
+                  <p>Once a week you meet with a clubmate for a guided conversation.</p>
                   <ul style="margin-bottom: 1rem;">
-                    <li>— <b class="highlight">We cover the meeting set-up, adjusting your timetables.</b></li>
-                    <li>— <b class="highlight">We prepare questions for you to discuss.</b></li>
+                    <li>1. We fully cover the meeting set-up & rescheduling. No stress adjusting timetables. </li>
+                    <li>2. We prepare questions for both of you. No awkward silence. </li>
                   </ul>
-                  <p>All you need is just come and start with the first question.</p>
+                  <p>All you need to do is come and start with the first one.</p>
                 </div>
               </div>
               <div class="box wide">
@@ -404,19 +410,30 @@
     </script>
     <script>
       window.onscroll = function() {
-        showScrollButton();
+          showScrollButton();
       };
 
-      function showScrollButton() {
-        var startButton = document.getElementById("startButton");
-        if (document.body.scrollTop > 0.5 * window.innerHeight || document.documentElement.scrollTop > 0.5 * window.innerHeight) {
-          startButton.classList.remove("hide");
-          startButton.classList.add("show");
-        } else {
-          startButton.classList.add("hide");
-          startButton.classList.remove("show");
-        }
+      let hasShownOnce = false;
+
+      function isElementCompletelyOutOfSight(element) {
+          const rect = element.getBoundingClientRect();
+          return rect.bottom < 0;
       }
+
+      function showScrollButton() {
+          var originalButton = document.getElementById("hero-button"); 
+          var startButton = document.getElementById("startButton");
+
+          if (isElementCompletelyOutOfSight(originalButton)) {
+        startButton.classList.remove("hide");
+        startButton.classList.add("show");
+        hasShownOnce = true;
+    } else if (hasShownOnce) {
+        startButton.classList.add("hide");
+        startButton.classList.remove("show");
+    }
+      }
+
       var btns = document.getElementsByClassName("start-button-holder");
 
       for (var i = 0; i < btns.length; i++) {
@@ -425,14 +442,6 @@
         };
       }
 
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
     </script>
   </body>
 </html>
