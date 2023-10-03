@@ -1470,7 +1470,7 @@ h1, .title {
   content: "";
   position: absolute;
   top: 15px;
-  left: -15px;
+  left: -14px;
   width: 0px;
   height: 0px;
   border-style: solid;
@@ -3510,6 +3510,13 @@ span.lesson-card-header {
   padding: 20px;
   border-radius: 15px;
   margin: 1rem 0;
+}
+
+.white-block-highlight{
+  background: #e5e5e5;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 1rem 0;
 }
 
 .how-it-works-no-stress__title {
